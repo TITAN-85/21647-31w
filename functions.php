@@ -45,7 +45,7 @@ function underscores_setup() {
 add_action( 'after_setup_theme', 'underscores_setup' );
 
 
-
+ 
 /**
  * Enqueue scripts and styles.
  */

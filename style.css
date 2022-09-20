@@ -14,9 +14,11 @@ Text Domain: underscores
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(194, 224, 220);
 }
 
 h1 {
-    color: rgb(69, 160, 118);
+    color: rgb(255, 255, 255);
+    background-color: rgb(124, 29, 42);
 }
 

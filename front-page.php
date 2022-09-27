@@ -13,7 +13,7 @@
  * @package UNDERSCORES
  */
 ?>
-<h1 class="trace">front-page.php</h1>
+<h1 class="trace">Alex's front-page.php </h1>
 <?php
 get_header();
 ?>

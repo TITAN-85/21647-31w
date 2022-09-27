@@ -363,12 +363,15 @@ h1 {
   font-family: "Times New Roman", Times, serif;
 }
 
-h2,
-h3,
-h4,
 h5,
 h6 {
   font-family: "Cambria", Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h2,
+h3,
+h4 {
+  color: rgb(118, 165, 130);
 }
 
 small, pre, code {

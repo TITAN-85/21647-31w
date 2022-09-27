@@ -41,4 +41,11 @@
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 
+			<?php wp_nav_menu(array(
+				"menu" => "principal",
+				"container" => "nav"
+			)); 
+			
+			?>
+
 		</header><!-- #masthead -->

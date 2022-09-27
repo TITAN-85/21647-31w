@@ -1,5 +1,5 @@
 /*!
-Theme Name: UNDERSCORES
+Theme Name: 21647-31w-Alexandru-Candu
 Theme URI: http://underscores.me/
 Author: Alex
 Author URI: http://underscores.me/
@@ -9,10 +9,21 @@ Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: underscores
+Text Domain: 31w
 */
 /* -------------------------------------------------------------- */
 /* Importation des variables. */
+/*
+$color__background-body : rgba(11, 194, 35, 0.534);
+
+$color__background--h1: rgb(87, 50, 50);
+
+$color__background--h2h3h4: rgb(118, 165, 130);
+
+$color__background--code: rgb(172, 101, 101);
+*/
+/* Color background */
+/* Color */
 /* normalize et box-sizing */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -337,11 +348,15 @@ html {
 
 /* les elements de base */
 body {
-  background-color: rgba(212, 212, 212, 0.534);
+  background-color: rgba(11, 194, 35, 0.534);
 }
 
 main {
   font-family: "Verdana, Geneva", Tahoma, sans-serif;
+}
+
+.trace {
+  background-color: aqua;
 }
 
 h1 {
@@ -354,13 +369,21 @@ h4,
 h5,
 h6 {
   font-family: "Cambria", Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+small, pre, code {
+  background-color: rgb(172, 101, 101);
+  margin: 10px;
+}
+
+pre {
+  font-family: "Courier New", Courier, monospace;
+}
+
+code {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+span {
+  margin: 0 10px;
 }/*# sourceMappingURL=style.css.map */
-
-p {
-  color: rgb(47, 45, 83);
-}
-
-h2 {
-  color: cadetblue;
-  font-weight: bold;
-}

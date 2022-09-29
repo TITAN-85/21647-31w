@@ -11,7 +11,7 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
+li > ul, /* Liste imbriqué - вложенный список */
 li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;

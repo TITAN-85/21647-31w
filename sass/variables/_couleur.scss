@@ -18,16 +18,19 @@ $color__background--h2h3h4: rgb(118, 165, 130);
 $color__background--h5h6: rgb(39, 87, 51);
 $color__background--code: rgb(172, 101, 101);
 
-/* Color */
+/* Color H */
 $color__h1: rgb(66, 46, 46);
 $color__h2h3h4: rgb(76, 163, 98);
 $color__h5h6: rgb(39, 80, 87);
 $color__code: rgb(141, 172, 101);
 
-
+/* Color Links*/
 $color__link: rgb(161, 35, 35);
 $color__link-visited: rgb(35, 161, 35);
 $color__link-hover: rgb(161, 35, 155);
 
-
-
+/* Color Buttons*/
+$color__border-button: red ;
+$color__background-button: rgb(23, 102, 98);
+$color__border-button-hover: rgb(21, 107, 141);
+$color__border-button-focus: rgb(51, 109, 12);

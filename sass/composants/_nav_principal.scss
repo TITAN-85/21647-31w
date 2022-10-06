@@ -2,7 +2,7 @@
 
 .menu__principal {
 
-    background-color: black;
+    background-color: $color__background-body;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,18 +12,21 @@
         list-style-type: none;
         display: flex;
         justify-content: space-between;
-
+        flex-wrap: wrap;
+        // flex-direction: column;
         }
 
         .menu-item { //li
             // list-style-type: none;
+
             padding: 10px;
-            background-color: rgb(255, 255, 255);
+            background-color: $color__background-body-menu;
             margin: 10px;
             a {
                 text-decoration: none;
                 font-weight: bold;
                 color: rgb(20, 76, 102);
+                font-family: $font__code;
             }
         }
     

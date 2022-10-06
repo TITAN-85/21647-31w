@@ -355,7 +355,7 @@ html {
 
 /* les elements de base */
 body {
-  background-color: rgba(11, 194, 35, 0.534);
+  background-color: rgba(206, 230, 231, 0.534);
 }
 
 main {
@@ -623,7 +623,7 @@ dd {
 
 /* Les composants */
 .menu__principal {
-  background-color: black;
+  background-color: rgba(206, 230, 231, 0.534);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -632,16 +632,18 @@ dd {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .menu__principal .menu-item {
   padding: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(140, 171, 172, 0.534);
   margin: 10px;
 }
 .menu__principal .menu-item a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(20, 76, 102);
+  font-family: "Verdana, Geneva", Tahoma, sans-serif;
 }
 
 .menu__aside {
@@ -651,9 +653,20 @@ dd {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.menu__aside .menu-item {
+  padding: 10px;
+  background-color: rgba(140, 171, 172, 0.534);
+  margin: 10px;
 }
 .menu__aside .menu-item a {
-  gap: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(20, 76, 102);
+  font-family: "Verdana, Geneva", Tahoma, sans-serif;
 }
 
 /*

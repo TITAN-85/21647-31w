@@ -11,8 +11,11 @@
 
 ?>
 
-	<footer>
+	<footer class="main-footer">
+
+
 		<p>Alex's footer</p>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

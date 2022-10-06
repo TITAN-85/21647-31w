@@ -14,3 +14,8 @@ main {
 	text-transform: uppercase;
 	font-family: $font__code;
 }
+.main-footer {
+	background-color: $color__background-body-footer;
+	width: 100%;
+	display: flex;
+}

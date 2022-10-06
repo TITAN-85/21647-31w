@@ -371,8 +371,14 @@ main {
   font-family: "Verdana, Geneva", Tahoma, sans-serif;
 }
 
+.main-footer {
+  background-color: rgba(73, 113, 114, 0.534);
+  width: 100%;
+  display: flex;
+}
+
 h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana, Geneva", Tahoma, sans-serif;
   padding: 20px;
 }
 

@@ -622,23 +622,23 @@ dd {
 }
 
 /* Les composants */
-.menu-principal-container {
+.menu__principal {
   background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.menu-principal-container .menu {
+.menu__principal .menu {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
 }
-.menu-principal-container .menu-item {
+.menu__principal .menu-item {
   padding: 10px;
   background-color: rgb(255, 255, 255);
   margin: 10px;
 }
-.menu-principal-container .menu-item a {
+.menu__principal .menu-item a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(20, 76, 102);

@@ -77,3 +77,24 @@ add_action( 'wp_enqueue_scripts', 'underscores_scripts' );
 		) );
 	}
 	add_action( 'after_setup_theme', 'Alex_register_nav_menu', 0 );
+
+
+
+
+	/*  Pour filtrer chacun ddes element du menu  */
+function igc31w_filtre_choix_menu($obj_menu){
+
+	echo "<b style='color: red'>Comporte des erreurs</b> <pre>" . print_r($obj_menu, true) . "</pre>";
+    // var_dump($obj_menu);
+
+    foreach($obj_menu as $cle => $value)
+    {
+		// echo "<b style='color: red'>Comporte des erreurs</b> <pre>" . print_r($value, true) . "</pre>";
+       // print_r($value);
+       //$value->title = substr($value->title,0,7);
+       $value->title = wp_trim_words($value->title,3,"...");
+       echo $value->title . '<br>';
+    }
+    return $obj_menu;
+}
+add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");

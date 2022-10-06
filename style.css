@@ -25,6 +25,7 @@ $color__background--code: rgb(172, 101, 101);
 /* Color background */
 /* Color H */
 /* Color Links*/
+/* Color Links aside*/
 /* Color Buttons*/
 /* Color Fields (imput text)*/
 /* hr */
@@ -450,6 +451,23 @@ a:hover, a:active {
   outline: 0;
 }
 
+/* Menu aside */
+.menu__aside a {
+  color: rgb(92, 26, 26);
+}
+.menu__aside a:visited {
+  color: rgb(16, 75, 16);
+}
+.menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
+  color: rgb(255, 0, 247);
+}
+.menu__aside a:focus {
+  outline: thin dotted;
+}
+.menu__aside a:hover, .menu__aside a:active {
+  outline: 0;
+}
+
 input[type=text],
 input[type=email],
 input[type=url],
@@ -624,4 +642,52 @@ dd {
   text-decoration: none;
   font-weight: bold;
   color: rgb(20, 76, 102);
+}
+
+.menu__aside {
+  display: flex;
+}
+.menu__aside .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu__aside .menu-item a {
+  gap: 20px;
+}
+
+/*
+.menu__aside {}
+.menu__aside .menu {}
+.menu__aside .menu-item {}
+.menu__aside a {}
+*/
+/* Layout */
+.site {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+.site__header {
+  grid-area: header;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget__area {
+  grid-area: sidebar;
+}
+
+.site__footer {
+  grid-area: footer;
+}
+
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
 }/*# sourceMappingURL=style.css.map */

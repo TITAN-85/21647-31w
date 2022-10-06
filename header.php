@@ -26,7 +26,7 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 
-		<header id="masthead" class="site-header">
+		<header id="masthead" class="site__header">
 			<div class="site-branding">
 
 				<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
@@ -43,9 +43,21 @@
 
 			<?php wp_nav_menu(array(
 				"menu" => "principal",
-				"container" => "nav"
+				"container" => "nav",
+				"container_class" => "menu__principal"
+			)); 
+			
+			?>
+		</header><!-- #masthead -->
+		<aside class="widget__area">
+			<h2>Menu secondaire</h2>
+
+			<?php wp_nav_menu(array(
+				"menu" => "aside",
+				"container" => "nav",
+				"container_class" => "menu__aside"
 			)); 
 			
 			?>
 
-		</header><!-- #masthead -->
+		</aside>

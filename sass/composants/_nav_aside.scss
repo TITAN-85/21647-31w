@@ -1,0 +1,25 @@
+.menu__aside {
+    display: flex;
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-item {
+
+        a {
+            gap: 20px;
+        }
+        
+    }
+
+}
+
+
+/*
+.menu__aside {}
+.menu__aside .menu {}
+.menu__aside .menu-item {}
+.menu__aside a {}
+*/

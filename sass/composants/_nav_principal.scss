@@ -8,12 +8,10 @@
     justify-content: center;
 
     .menu {
-
+        margin: 20px;
         list-style-type: none;
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
-        // flex-direction: column;
         }
 
         .menu-item {

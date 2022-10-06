@@ -2,6 +2,7 @@
 
 h1{
     font-family: $police__titre-principale;
+    padding: 20px;
 }
 
 
@@ -15,4 +16,5 @@ h2,
 h3,
 h4 {
     color: $color__background--h2h3h4;
+    padding: 20px;
 }

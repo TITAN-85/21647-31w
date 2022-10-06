@@ -363,11 +363,17 @@ main {
 }
 
 .trace {
-  background-color: aqua;
+  background-color: rgba(140, 171, 172, 0.534);
+  padding: 20px;
+  margin-top: 0;
+  color: rgb(26, 47, 71);
+  text-transform: uppercase;
+  font-family: "Verdana, Geneva", Tahoma, sans-serif;
 }
 
 h1 {
   font-family: "Times New Roman", Times, serif;
+  padding: 20px;
 }
 
 h5,
@@ -380,11 +386,13 @@ h2,
 h3,
 h4 {
   color: rgb(118, 165, 130);
+  padding: 20px;
 }
 
 /*  ====================================================  */
 p {
   margin-bottom: 1.5em;
+  padding: 20px;
 }
 
 dfn,
@@ -526,6 +534,7 @@ hr {
 /*  ====================================================  */
 p {
   margin-bottom: 1.5em;
+  padding: 20px;
 }
 
 dfn,
@@ -629,9 +638,9 @@ dd {
   justify-content: center;
 }
 .menu__principal .menu {
+  margin: 20px;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .menu__principal .menu-item {
@@ -658,7 +667,7 @@ dd {
 }
 .menu__aside .menu {
   list-style-type: none;
-  margin: 0;
+  margin: 20px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;

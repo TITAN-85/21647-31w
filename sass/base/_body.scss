@@ -1,12 +1,16 @@
 
-
 body {
 	background-color: $color__background-body;
 }
 main {
-	font-family: $police__main;
+	font-family: $font__code;
 }
 
 .trace {
-	background-color: aqua;
+	background-color: $color__background-body-menu;
+	padding: 20px;
+	margin-top: 0;
+	color: $color__h1;
+	text-transform: uppercase;
+	font-family: $font__code;
 }

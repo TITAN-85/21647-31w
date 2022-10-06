@@ -12,14 +12,24 @@
     .menu-item {
         padding: 10px;
         background-color: $color__background-body-menu;
-        margin: 10px;
+        margin: 5px;
+        border-radius: 20px;
+
         a {
             text-decoration: none;
             font-weight: bold;
             color: rgb(20, 76, 102);
             font-family: $font__code;
+
         }
         
+    }
+    .menu-item:hover {
+        background-color: $color__link__aside-hover;
+    }
+
+    a:hover {
+        color: black;
     }
 
 }

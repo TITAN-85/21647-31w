@@ -459,7 +459,7 @@ a:hover, a:active {
   color: rgb(16, 75, 16);
 }
 .menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
-  color: rgb(255, 0, 247);
+  color: rgb(255, 255, 255);
 }
 .menu__aside a:focus {
   outline: thin dotted;
@@ -638,12 +638,19 @@ dd {
   padding: 10px;
   background-color: rgba(140, 171, 172, 0.534);
   margin: 10px;
+  border-radius: 5px;
 }
-.menu__principal .menu-item a {
+.menu__principal a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(20, 76, 102);
   font-family: "Verdana, Geneva", Tahoma, sans-serif;
+}
+.menu__principal .menu-item:hover {
+  background-color: rgb(255, 255, 255);
+}
+.menu__principal a:hover {
+  color: black;
 }
 
 .menu__aside {
@@ -660,13 +667,20 @@ dd {
 .menu__aside .menu-item {
   padding: 10px;
   background-color: rgba(140, 171, 172, 0.534);
-  margin: 10px;
+  margin: 5px;
+  border-radius: 20px;
 }
 .menu__aside .menu-item a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(20, 76, 102);
   font-family: "Verdana, Geneva", Tahoma, sans-serif;
+}
+.menu__aside .menu-item:hover {
+  background-color: rgb(255, 255, 255);
+}
+.menu__aside a:hover {
+  color: black;
 }
 
 /*

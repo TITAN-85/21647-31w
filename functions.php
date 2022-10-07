@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UNDERSCORES functions and definitions
  *
@@ -7,24 +8,25 @@
  * @package UNDERSCORES
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define('_S_VERSION', '1.0.0');
 }
 
-function underscores_setup() {
+function underscores_setup()
+{
 
-    	/*
+	/*
 		* Let WordPress manage the document title.
 		* By adding theme support, we declare that this theme does not use a
 		* hard-coded <title> tag in the document head, and expect WordPress to
 		* provide it for us.
 		*/
-	add_theme_support( 'title-tag' );
+	add_theme_support('title-tag');
 
 
 
-    	/*
+	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.
 		*/
@@ -42,14 +44,15 @@ function underscores_setup() {
 	);
 }
 
-add_action( 'after_setup_theme', 'underscores_setup' );
+add_action('after_setup_theme', 'underscores_setup');
 
 
- 
+
 /**
  * Enqueue scripts and styles.
  */
-function underscores_scripts() {
+function underscores_scripts()
+{
 	/*
 	wp_enqueue_style( 'underscores-style',
 					   get_stylesheet_uri(), 
@@ -57,44 +60,66 @@ function underscores_scripts() {
 					   _S_VERSION );
 	*/
 
-	wp_enqueue_style('underscores-style', 
-					  get_template_directory_uri() .'/style.css', 
-					  array(), 
-					  filemtime(get_template_directory() .'/style.css'), false);
+	wp_enqueue_style(
+		'underscores-style',
+		get_template_directory_uri() . '/style.css',
+		array(),
+		filemtime(get_template_directory() . '/style.css'),
+		false
+	);
 }
 
-add_action( 'wp_enqueue_scripts', 'underscores_scripts' );
+add_action('wp_enqueue_scripts', 'underscores_scripts');
 
 
 /* ------------------------------------------ */
 
 
 
-	function Alex_register_nav_menu(){
-		register_nav_menus( array(
-	    	'primary_menu' => __( 'Primary Menu', 'text_domain' ),
-	    	'footer_menu'  => __( 'Footer Menu', 'text_domain' ),
-		) );
+function Alex_register_nav_menu()
+{
+	register_nav_menus(array(
+		'primary_menu' => __('Primary Menu', 'text_domain'),
+		'footer_menu'  => __('Footer Menu', 'text_domain'),
+	));
+}
+add_action('after_setup_theme', 'Alex_register_nav_menu', 0);
+
+
+/*  Pour filtrer chacun ddes element du menu  */
+function igc31w_filtre_choix_menu($obj_menu)
+{
+	//var_dump($obj_menu);
+	foreach ($obj_menu as $cle => $value) {
+		// print_r($value);
+		//$value->title = substr($value->title,0,7);
+		$value->title = wp_trim_words($value->title, 3, "...");
+		// echo $value->title . '<br>';
+
 	}
-	add_action( 'after_setup_theme', 'Alex_register_nav_menu', 0 );
+	return $obj_menu;
+}
+add_filter("wp_nav_menu_objects", "igc31w_filtre_choix_menu");
 
 
 
+// function igc31w_filtre_choix_menu($obj_menu, $arg)
+// {
+	//echo "/////////////////  obj_menu";
+	// var_dump($obj_menu);
+	//  echo "/////////////////  arg";
+	//  var_dump($arg);
 
-	/*  Pour filtrer chacun ddes element du menu  */
-// function igc31w_filtre_choix_menu($obj_menu){
-
-	// echo "<b style='color: red'>Comporte des erreurs</b> <pre>" . print_r($obj_menu, true) . "</pre>";
-    // var_dump($obj_menu);
-
-    // foreach($obj_menu as $cle => $value)
-    {
-		// echo "<b style='color: red'>Comporte des erreurs</b> <pre>" . print_r($value, true) . "</pre>";
-       // print_r($value);
-       //$value->title = substr($value->title,0,7);
-    //    $value->title = wp_trim_words($value->title,3,"...");
-    //    echo $value->title . '<br>';
-    }
-    // return $obj_menu;
+	// if ($arg->menu == "sidebar") {
+	// 	foreach ($obj_menu as $cle => $value) {
+	// 		print_r($value);
+	// 		$value->title = substr($value->title, 7);
+	// 		$value->title = wp_trim_words($value->title, 3, "...");
+			//echo $value->title . '<br>';
+	// 	}
+	// }
+	//die();
+	// return $obj_menu;
 // }
-// add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
+
+// add_filter("wp_nav_menu_objects", "igc31w_filtre_choix_menu", 10, 2);

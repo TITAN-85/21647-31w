@@ -1,0 +1,179 @@
+[33mcommit 8236e97f0d3301207d86419a6d28d3d7a94cdd9e[m[33m ([m[1;36mHEAD -> [m[1;32mexer1[m[33m, [m[1;31morigin/exer1[m[33m)[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Oct 6 13:46:37 2022 -0400
+
+    des petite changement ave le text et ajout le background de footer
+
+[33mcommit 235f5785c6b74acaa2b303fb2c0e870dc37104b7[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Oct 6 12:53:49 2022 -0400
+
+    jai ajoute des padding et margin par tout ou le text ete tro proche de bord
+
+[33mcommit 488ba88008305eea73bfcd6c955f11dffe6dcc2a[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Oct 6 12:31:56 2022 -0400
+
+    Jai ajoute de hover pour les menu et de border radius
+
+[33mcommit a4e4f498f70234a014857fb44c668dae50573c39[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Oct 6 12:19:03 2022 -0400
+
+    changement de l intrface de menu principale et sidebar
+
+[33mcommit 94b420a6b1e239e70946bdef79abcc80d850ff05[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Oct 6 12:07:23 2022 -0400
+
+    on a ajouter menu aside et de couleurs pour aside bar
+
+[33mcommit 4a0e47321ed539dcaa4c74e17b9ab84dcb79d551[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Oct 6 12:07:12 2022 -0400
+
+    on a ajouter menu aside et de couleurs pour aside bar
+
+[33mcommit 7b3e63f01c9ea555d3bd86d9e3daabdf08f9bc90[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Sep 29 12:13:35 2022 -0400
+
+    configuration de menu. Creation de flex, colors, text decoration...
+
+[33mcommit ed849d666178b3c54f0c6688d80e25ef37e20012[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Sep 29 11:44:51 2022 -0400
+
+    creation de dosier composants et de fichier nav principal. creation quelque couleur
+
+[33mcommit 95477f0eefb19bb58cf0f3d5e6d4309b79604cc2[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Sep 29 10:51:05 2022 -0400
+
+    creation des variables couleures et des police 'Simple'
+
+[33mcommit d421a22c91494f225867e4ca8e4979221b55816f[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Sep 29 10:30:38 2022 -0400
+
+    ajouter des couleures Fields, hr
+
+[33mcommit 9e7af697f210da8cb74f44224d9fa111d414edbd[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Sep 29 10:24:15 2022 -0400
+
+    ajouter 5 fichieres dans base et cree des couleures buttons
+
+[33mcommit 2f3fdc1bc2cde1c6ce9ea864531e2eabc9d84c30[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Wed Sep 28 16:54:26 2022 -0400
+
+    sgdf
+
+[33mcommit a819bf0a746bcc0a7e9ba4966ae643ef7818c0c9[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 27 17:38:41 2022 -0400
+
+    ajoute de couleur h5h6 background color
+
+[33mcommit 11e6b9cfc19ae5707295914cff378fb19f851579[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 27 17:37:08 2022 -0400
+
+    ajoute de couleur h2h3h4 background color
+
+[33mcommit 74c8695b28654aee0093ebaee4dd61f17d95a435[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 27 17:23:40 2022 -0400
+
+    ajoute des 'a' dans le fichier _links.scss
+
+[33mcommit afbcf8565c801605b88a2890239951698904abe6[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 27 17:17:30 2022 -0400
+
+    changement de nom de  methode -> Alex_register_nav_menu
+
+[33mcommit 6815205b479207785ca5f6799200520da9c72e11[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 27 17:06:36 2022 -0400
+
+    creation de la naviagtion
+
+[33mcommit 533083e6dd24e2c28ebf074bdd0c162abfd7c268[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 27 14:36:59 2022 -0400
+
+    ajoute de bold pour h2
+
+[33mcommit f2571f8af134b2e7b8bd52223fb239b35a0271cc[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 27 14:36:13 2022 -0400
+
+    changement de color h2
+
+[33mcommit 291d61ba878340002e60310a059e91a94877b4d4[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 27 14:35:21 2022 -0400
+
+    changement de color p
+
+[33mcommit 05fdf74fb5a69b54def054ff51e37c5f60845777[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 27 14:34:35 2022 -0400
+
+    changement de fon gris
+
+[33mcommit 3def211f4beacfbe9e6da8d5f21b6e23c0aed065[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 27 14:22:25 2022 -0400
+
+    changement de fon gris
+
+[33mcommit d9fa3eefe15bddf541a29eb3e5b045cb1825c55b[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 20 17:19:08 2022 -0400
+
+    ajout des couleures dan polices.scss et des changement dans body et couleures
+
+[33mcommit 79ff01d3c9bf29a61f97b0cf9bb4114bd471a5d1[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 20 15:28:19 2022 -0400
+
+    ajout simple de header.php et footer.php
+
+[33mcommit ba28332c58744a5e42e7acebe08b3e638e14c866[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Sep 15 12:04:22 2022 -0400
+
+    on a ajouter des fishiere scss
+
+[33mcommit 7361eb84433ea50fc25ef281419863fb75b8ad72[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Sep 15 11:28:03 2022 -0400
+
+    modification wp_enqueue_style
+
+[33mcommit 0915034791d9704940d7f9ba914f944ae9562d5a[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Sep 15 11:15:42 2022 -0400
+
+    ajouter style css
+
+[33mcommit c8e16959bb1a52fd0b16176f88b0e7a6136b8a11[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Sep 15 10:31:59 2022 -0400
+
+    modifier the_title() en ajoutant un 'h1' au lieu de 'p'
+
+[33mcommit a119ec5d4357d986ef61d650222f9f6646a138e3[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Thu Sep 15 10:07:28 2022 -0400
+
+    modifier the_title() en ajoutant un paragraph autour du titre
+
+[33mcommit 8e3f6516aa1592b9eee3b1dceb344754e4ce513d[m
+Author: Alexandru Candu <102234554+TITAN-85@users.noreply.github.com>
+Date:   Tue Sep 13 16:32:21 2022 -0400
+
+    debut du theme simple

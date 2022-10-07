@@ -33,10 +33,10 @@
 		// display: grid;
 		grid-template-columns: ($size__site-sidebar) auto;
 		grid-template-areas:
+
+			"header header"
 			"sidebar main"
 			"footer footer"
-			"header header"
-
 			;
 	}
 }

@@ -380,6 +380,7 @@ main {
 h1 {
   font-family: "Verdana, Geneva", Tahoma, sans-serif;
   padding: 20px;
+  font-size: clamp(0.9rem, 2vw, 2.5rem);
 }
 
 h5,
@@ -482,6 +483,7 @@ a:hover, a:active {
   outline: 0;
 }
 
+/* Menu aside */
 input[type=text],
 input[type=email],
 input[type=url],
@@ -704,13 +706,12 @@ dd {
 .menu__aside .menu-item {}
 .menu__aside a {}
 */
-/* Layout */
-.site {
-  display: grid;
-  grid-template-columns: 25% auto;
-  grid-template-areas: "header header" "sidebar main" "footer footer";
+.site__title {
+  font-size: clamp(2rem, 4vw, 5rem);
 }
 
+/* Layout */
+/*  Just 1 layout que dois etre alume  */
 .site__header {
   grid-area: header;
 }
@@ -732,4 +733,16 @@ dd {
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "main" "footer";
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar" "header" "main" "footer";
+}
+@media screen and (min-width: 700px) {
+  .site {
+    grid-template-columns: 25% auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */

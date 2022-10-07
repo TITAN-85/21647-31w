@@ -699,6 +699,11 @@ dd {
 .menu__aside a:hover {
   color: black;
 }
+@media screen and (max-width: 700px) {
+  .menu__aside .menu {
+    display: none;
+  }
+}
 
 /*
 .menu__aside {}

@@ -87,15 +87,22 @@ add_action('after_setup_theme', 'Alex_register_nav_menu', 0);
 
 
 /*  Pour filtrer chacun ddes element du menu  */
-function igc31_filtre_choix_menu($obj_menu, $arg){
- 
-    if ($arg->menu == "aside"){
-    foreach($obj_menu as $cle => $value)
-    {
-       $value->title = substr($value->title,7);
-       $value->title = wp_trim_words($value->title, 3,"...");
-     } 
-    }
+function igc31_filtre_choix_menu($obj_menu, $arg)
+{
+
+	if ($arg->menu == "aside") {
+		foreach ($obj_menu as $cle => $value) {
+			$value->title = substr($value->title, 7);
+			$value->title = wp_trim_words($value->title, 3, "...");
+		}
+	}
+	if ($arg->menu == "principal") {
+		foreach ($obj_menu as $cle => $value) {
+			$value->title = substr($value->title, 7);
+			$value->title = wp_trim_words($value->title, 3, "...");
+		}
+	}
+
 	return $obj_menu;
 }
-add_filter("wp_nav_menu_objects","igc31_filtre_choix_menu", 10,2);
+add_filter("wp_nav_menu_objects", "igc31_filtre_choix_menu", 10, 2);

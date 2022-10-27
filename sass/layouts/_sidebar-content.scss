@@ -11,6 +11,12 @@
 .widget__area {
 	grid-area: sidebar;
 }
+// .widget__area-1 {
+// 	grid-area: sidebar-1;
+// }
+// .widget__area2 {
+// 	grid-area: sidebar-2;
+// }
 
 .site__footer {
 	grid-area: footer;
@@ -26,7 +32,15 @@
 		"sidebar"
 		"header"
 		"main"
-		"footer";
+		"footer"
+
+		// "sidebar-1"
+		// "header"
+		// "main"
+		// "sidebar-2"
+		// "footer"
+		
+		;
 
 
 	@media screen and (min-width : 700px){
@@ -37,6 +51,11 @@
 			"header header"
 			"sidebar main"
 			"footer footer"
+
+			// "header header"
+			// "sidebar-1 main"
+			// "sidebar-2 main"
+			// "footer footer"
 			;
 	}
 }

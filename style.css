@@ -715,6 +715,19 @@ dd {
   font-size: clamp(2rem, 4vw, 5rem);
 }
 
+.site__footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: bisque;
+}
+
+.site__footer div {
+  width: 20%;
+  height: 200px;
+  border: 1px solid rgb(228, 202, 202);
+  background-color: bisque;
+}
+
 /* Layout */
 /*  Just 1 layout que dois etre alume  */
 .site__header {

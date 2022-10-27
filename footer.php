@@ -16,9 +16,12 @@
 	</footer> -->
 	<!-- #colophon -->
 
-	<footer class="site-footer">
-	<p><?php get_sidebar('primary'); ?></p>
-		<p>Alex's footer</p>
+	<footer class="site__footer">
+		<div><?php get_sidebar('footer-1'); ?></div>
+		<div><?php get_sidebar('footer-2'); ?></div>
+		<div>Alex's footer</div>
+		<div>lorem3</div>
+		<div>lorem3</div>
 	</footer><!-- #colophon -->
 
 

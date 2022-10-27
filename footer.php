@@ -11,12 +11,18 @@
 
 ?>
 
-	<footer class="main-footer">
-
-
+	<!-- <footer class="main-footer">
 		<p>Alex's footer</p>
+	</footer> -->
+	<!-- #colophon -->
 
+	<footer class="site-footer">
+	<p><?php get_sidebar('primary'); ?></p>
+		<p>Alex's footer</p>
 	</footer><!-- #colophon -->
+
+
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

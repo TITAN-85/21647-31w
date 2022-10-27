@@ -163,6 +163,30 @@ function my_register_sidebars() {
 		)
 	);
 
+	register_sidebar(
+		array(
+			'id'            => 'aside-1',
+			'name'          => __( 'Sidebar - aside-1' ),
+			'description'   => __( 'Premiere sidebar du aside' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'id'            => 'aside-2',
+			'name'          => __( 'Sidebar - aside-2' ),
+			'description'   => __( 'Deuxieme sidebar du aside' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
 
 	/* Repeat register_sidebar() code for additional sidebars. */
 }

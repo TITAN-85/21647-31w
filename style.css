@@ -617,7 +617,9 @@ ol {
 }
 
 ul {
-  list-style: disc;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 ol {
@@ -628,6 +630,8 @@ li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
+  padding: 0;
+  margin: 0;
 }
 
 dt {
@@ -724,9 +728,24 @@ dd {
 .site__footer > div {
   flex: 1;
   padding: 10px;
-  height: 200px;
-  border: 0.5px solid rgb(228, 202, 202);
-  background-color: bisque;
+  height: 270px;
+  border: 2px solid rgb(240, 242, 250);
+  background-color: rgb(184, 229, 243);
+}
+
+.site__footer img {
+  border: 3px solid rgb(221, 183, 204);
+}
+
+.site__footer h3, a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site__footer li {
+  padding: 5px;
 }
 
 /* Layout */

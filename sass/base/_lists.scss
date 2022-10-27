@@ -4,7 +4,10 @@ ol {
 }
 
 ul {
-	list-style: disc;
+	list-style-type: none; 
+	// list-style: disc;
+	padding: 0;
+	margin: 0;
 }
 
 ol {
@@ -15,6 +18,8 @@ li > ul, /* Liste imbriqué - вложенный список */
 li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
+	padding: 0;
+	margin: 0;
 }
 
 dt {

@@ -748,6 +748,11 @@ dd {
   padding: 5px;
 }
 
+.sidebar {
+  margin: 20px;
+  padding-top: 40px;
+}
+
 /* Layout */
 /*  Just 1 layout que dois etre alume  */
 .site__header {

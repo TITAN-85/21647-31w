@@ -11,12 +11,12 @@
 // .widget__area {
 // 	grid-area: sidebar;
 // }
-.widget__area-1 {
-	grid-area: sidebar-1;
+.site__menu {
+	grid-area: menu;
 }
-.widget__area-2 {
+.site__sidebar {
 	background-color: rgb(230, 251, 255);
-	grid-area: sidebar-2;
+	grid-area: sidebar;
 }
 
 .site__footer {
@@ -35,10 +35,10 @@
 		// "main"
 		// "footer"
 
-		"sidebar-1"
+		"menu"
 		"header"
 		"main"
-		"sidebar-2"
+		"sidebar"
 		"footer"
 		
 		;
@@ -54,8 +54,8 @@
 			// "footer footer"
 
 			"header header"
-			"sidebar-1 main"
-			"sidebar-2 main"
+			"menu main"
+			"sidebar main"
 			". main"
 			"footer footer"
 			;

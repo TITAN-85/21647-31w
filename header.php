@@ -49,7 +49,7 @@
 
 			?>
 		</header><!-- #masthead -->
-		<aside class="widget__area-1">
+		<aside class="site__menu">
 			<h2>Menu secondaire</h2>
 
 			<?php wp_nav_menu(array(
@@ -62,7 +62,7 @@
 
 		</aside>
 
-		<aside class="widget__area-2">
+		<aside class="site__sidebar">
 			<div><?php get_sidebar('aside-1'); ?></div>
 			<div><?php get_sidebar('aside-2'); ?></div>
 		</aside>

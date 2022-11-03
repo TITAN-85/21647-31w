@@ -729,7 +729,7 @@ dd {
 .site__footer > div {
   flex: 1;
   padding: 10px;
-  height: 270px;
+  height: 370px;
   border: 2px solid rgb(240, 242, 250);
   background-color: rgb(184, 229, 243);
 }
@@ -764,13 +764,13 @@ dd {
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.widget__area-1 {
-  grid-area: sidebar-1;
+.site__menu {
+  grid-area: menu;
 }
 
-.widget__area-2 {
+.site__sidebar {
   background-color: rgb(230, 251, 255);
-  grid-area: sidebar-2;
+  grid-area: sidebar;
 }
 
 .site__footer {
@@ -786,11 +786,11 @@ dd {
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar-1" "header" "main" "sidebar-2" "footer";
+  grid-template-areas: "menu" "header" "main" "sidebar" "footer";
 }
 @media screen and (min-width: 700px) {
   .site {
     grid-template-columns: 25% auto;
-    grid-template-areas: "header header" "sidebar-1 main" "sidebar-2 main" ". main" "footer footer";
+    grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
   }
 }/*# sourceMappingURL=style.css.map */

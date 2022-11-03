@@ -50,12 +50,9 @@
 			?>
 		</header><!-- #masthead -->
 		<aside class="site__menu">
-			<h2>2-x checkbox</h2>
+			<h2 class="menu-icone">Montrer le menu</h2>
 			<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
-			<!-- <input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger" > -->
 			<label for="chk-burger" class="burger">&#127829;</label>
-			<!-- <label for="chk-burger" class="burger">&#127780;</label> -->
-			<!-- <h2>Menu secondaire</h2> -->
 
 			<?php wp_nav_menu(array(
 				"menu" => "aside",

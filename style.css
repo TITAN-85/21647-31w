@@ -691,12 +691,16 @@ dd {
   transform: translateX(-100vw);
 }
 
+.menu-icone {
+  margin-top: 40px;
+}
+
 .burger {
   position: absolute;
   width: 2rem;
   height: 2rem;
   top: 10px;
-  left: 10px;
+  left: 40px;
   transform: rotate(0deg);
   transition: transform 0.5s;
   font-size: 2rem;
@@ -709,7 +713,7 @@ dd {
   width: 250px;
   top: 70px;
   transform: translateX(-100vw);
-  transition: transform 1s;
+  transition: transform 0.5s;
   background-color: rgba(56, 97, 145, 0.192);
   border-radius: 10px;
 }

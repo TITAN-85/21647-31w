@@ -27,6 +27,9 @@ get_header();
                 <h1><a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?></a></h1>
                 <p> Duree du cour <?php the_field('duree'); ?> </p>
+                <h2>Couriel:<?php the_field('couriel'); ?></h2>
+                <h2>Date de debue:<?php the_field('date'); ?></h2>
+                <h2>Place pour trouve:<?php the_field('carte'); ?></h2>
                 <?php the_content(null, true); ?>
                 
             <?php endwhile; ?>

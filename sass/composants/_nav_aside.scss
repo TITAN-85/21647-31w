@@ -1,5 +1,45 @@
+.site__menu {
+    position: relative;
+}
+
+.chk-burger {
+    display: none;
+}
+
+.chk-burger:checked ~ .burger {
+    transform: rotate(90deg);
+}
+
+  .chk-burger:checked ~ .menu__aside {
+    transform: translateX(0);
+}
+
+.burger {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 10px;
+    left: 10px;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+    font-size: 2rem;
+    color: #fff;
+}
+
+
 .menu__aside {
     display: flex;
+    position: absolute;
+    width: 100vw;
+    top: 70px;
+    transform: translateX(-100vw);
+    transition: transform 0.5s;
+    background-color: #000;
+    @media screen and (min-width: 700px) {
+      position: static;
+      transform: translateX(0);
+    }
+    
     .menu {
         list-style-type: none;
         margin: 20px;

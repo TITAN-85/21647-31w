@@ -688,7 +688,7 @@ dd {
 }
 
 .chk-burger:checked ~ .menu__aside {
-  transform: translateX(0);
+  transform: translateX(-100vw);
 }
 
 .burger {
@@ -706,11 +706,12 @@ dd {
 .menu__aside {
   display: flex;
   position: absolute;
-  width: 100vw;
+  width: 250px;
   top: 70px;
   transform: translateX(-100vw);
-  transition: transform 0.5s;
-  background-color: #000;
+  transition: transform 1s;
+  background-color: rgba(56, 97, 145, 0.192);
+  border-radius: 10px;
 }
 @media screen and (min-width: 700px) {
   .menu__aside {

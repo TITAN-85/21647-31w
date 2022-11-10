@@ -1,0 +1,15 @@
+.nav__evenement {
+
+}
+
+.nav__evenement .menu { // ul
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+    border: 1px solid brown;
+}
+
+.nav__evenement .menu-item {
+    width: 25%;
+}

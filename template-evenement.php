@@ -3,7 +3,7 @@
 * Template Name: Evenement
 *
 * @package WordPress
-* @subpackage 21647_31w
+* @subpackage igc_31w
 */
 ?>
  

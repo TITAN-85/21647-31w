@@ -761,6 +761,17 @@ dd {
 .menu__aside .menu-item {}
 .menu__aside a {}
 */
+.nav__evenement .menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid brown;
+}
+
+.nav__evenement .menu-item {
+  width: 25%;
+}
+
 .site__title {
   font-size: clamp(2rem, 4vw, 5rem);
 }

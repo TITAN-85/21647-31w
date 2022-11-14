@@ -761,15 +761,27 @@ dd {
 .menu__aside .menu-item {}
 .menu__aside a {}
 */
-.nav__evenement .menu {
+.menu__evenement .menu {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   border: 1px solid brown;
 }
 
-.nav__evenement .menu-item {
+.menu__evenement .menu-item {
   width: 25%;
+}
+
+.menu__evenement .menu-item a {
+  text-decoration: none;
+}
+
+.menu__evenement .menu-item a:hover {
+  text-decoration: overline;
+}
+
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .evenement__porte {

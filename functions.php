@@ -108,16 +108,37 @@ function igc31_filtre_choix_menu($obj_menu, $arg)
 add_filter("wp_nav_menu_objects", "igc31_filtre_choix_menu", 10, 2);
 
 
-// Widget init.  Initialisation de sidebar
 
-add_action( 'widgets_init', 'my_register_sidebars' );
-function my_register_sidebars() {
+
+/* Ajout de la description dans menu */
+function prefix_nav_description($item_output, $item)
+{
+	if (!empty($item->description)) {
+		$item_output = str_replace(
+			'</a>',
+			'<hr><span class="menu__item__description">' . $item->description . '</span><div class="menu__item__icone"></div></a>',
+			$item_output
+		);
+	}
+	return $item_output;
+}
+add_filter('walker_nav_menu_start_el', 'prefix_nav_description', 10, 2);
+// l'argument 10 : niveau de privilège
+// l'argument 2 : le nombre d'argument dans la fonction de rappel: «prefix_nav_description»
+
+
+
+
+/* Widget init.  Initialisation de sidebar */
+add_action('widgets_init', 'my_register_sidebars');
+function my_register_sidebars()
+{
 	/* Register the 'footer-1' sidebar. */
 	register_sidebar(
 		array(
 			'id'            => 'footer-1',
-			'name'          => __( 'Sidebar - footer-1' ),
-			'description'   => __( 'Premier sidebar du footer' ),
+			'name'          => __('Sidebar - footer-1'),
+			'description'   => __('Premier sidebar du footer'),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -128,8 +149,8 @@ function my_register_sidebars() {
 	register_sidebar(
 		array(
 			'id'            => 'footer-2',
-			'name'          => __( 'Sidebar - footer-2' ),
-			'description'   => __( 'Deuxième sidebar du footer' ),
+			'name'          => __('Sidebar - footer-2'),
+			'description'   => __('Deuxième sidebar du footer'),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -137,12 +158,12 @@ function my_register_sidebars() {
 		)
 	);
 
-	
+
 	register_sidebar(
 		array(
 			'id'            => 'footer-3',
-			'name'          => __( 'Sidebar - footer-3' ),
-			'description'   => __( 'Troisieme sidebar du footer' ),
+			'name'          => __('Sidebar - footer-3'),
+			'description'   => __('Troisieme sidebar du footer'),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -150,12 +171,12 @@ function my_register_sidebars() {
 		)
 	);
 
-	
+
 	register_sidebar(
 		array(
 			'id'            => 'footer-4',
-			'name'          => __( 'Sidebar - footer-4' ),
-			'description'   => __( 'Quatrieme sidebar du footer' ),
+			'name'          => __('Sidebar - footer-4'),
+			'description'   => __('Quatrieme sidebar du footer'),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -166,8 +187,8 @@ function my_register_sidebars() {
 	register_sidebar(
 		array(
 			'id'            => 'aside-1',
-			'name'          => __( 'Sidebar - aside-1' ),
-			'description'   => __( 'Premiere sidebar du aside' ),
+			'name'          => __('Sidebar - aside-1'),
+			'description'   => __('Premiere sidebar du aside'),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -178,8 +199,8 @@ function my_register_sidebars() {
 	register_sidebar(
 		array(
 			'id'            => 'aside-2',
-			'name'          => __( 'Sidebar - aside-2' ),
-			'description'   => __( 'Deuxieme sidebar du aside' ),
+			'name'          => __('Sidebar - aside-2'),
+			'description'   => __('Deuxieme sidebar du aside'),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -190,4 +211,3 @@ function my_register_sidebars() {
 
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
-  

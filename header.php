@@ -35,19 +35,17 @@
 				$underscores_description = get_bloginfo('description', 'display');
 				if ($underscores_description || is_customize_preview()) :
 				?>
-
 					<p class="site-description"><?php echo $underscores_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
 												?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 
-			<?php wp_nav_menu(array(
+<?php /* Affichage du menu principal */
+				wp_nav_menu(array(
 				"menu" => "principal",
 				"container" => "nav",
-				"container_class" => "menu__principal"
-			));
+				"container_class" => "menu__principal")); ?>
 
-			?>
 		</header><!-- #masthead -->
 		<aside class="site__menu">
 			<h2 class="menu-icone">Montrer le menu</h2>

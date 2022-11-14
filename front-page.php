@@ -14,9 +14,7 @@
  */
 ?>
 <h1 class="trace">Alex's front-page.php </h1>
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 
 <main class="site__main">

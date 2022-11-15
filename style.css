@@ -865,6 +865,17 @@ dd {
   margin: 20px;
 }
 
+.liste {
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.liste__cours {
+  flex: 0 1 20%;
+}
+
 /* Layout */
 /*  Just 1 layout que dois etre alume  */
 .site__header {

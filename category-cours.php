@@ -32,10 +32,10 @@
                                     <?php the_title(); ?></a></h1>
 
                             <h2>Durée de cours:<?php the_field('duree'); ?></h2>
-                            <h2>Couriel:<?php the_field('couriel'); ?></h2>
-                            <h2>Date de debue:<?php the_field('date'); ?></h2>
+                            <!-- <h2>Couriel:<?php // the_field('couriel'); ?></h2> -->
+                            <!-- <h2> Date de debue: <?php // the_field('date'); ?></h2> -->
                             <h2>Place pour trouve:<?php the_field('carte'); ?></h2>
-
+                            <!-- the_exerp... TODO: --> 
                             <?php the_content(null, true); ?>
                             <!-- wp_trim_words() -->
 

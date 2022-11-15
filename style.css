@@ -23,20 +23,6 @@ $color__background--h2h3h4: rgb(118, 165, 130);
 $color__background--code: rgb(172, 101, 101);
 */
 :root {
-  --color-primary: #17a477;
-  --color-primary-variation: #17a477;
-  --color-primary-second-variation: #c2e982;
-  --color-secondary: #f8efd4;
-  --color-secondary-variation:#12455a;
-  --color-palette-first: #ffffff;
-  --color-palette-second: #121b08;
-  --color-palette-second-var:#F1EFE5;
-  --color-palette-third: #ADB5C5;
-  --color-dark: #201D1F;
-  --color-white: #ffffff;
-}
-
-:root {
   /* --color-primary:  #661502;
   --color-primary-variation:  #fffbf4;
   --color-primary-second-variation:  #915e00;
@@ -90,6 +76,20 @@ $color__background--code: rgb(172, 101, 101);
   --color-palette-third:#f9f9f9 ;
   --color-dark: #201D1F;
   --color-white: #ffffff; */
+}
+
+:root {
+  --color-primary: #17a477;
+  --color-primary-variation: #17a477;
+  --color-primary-second-variation: #c2e982;
+  --color-secondary: #f8efd4;
+  --color-secondary-variation:#12455a;
+  --color-palette-first: #ffffff;
+  --color-palette-second: #243511;
+  --color-palette-second-var:#F1EFE5;
+  --color-palette-third: #ADB5C5;
+  --color-dark: #201D1F;
+  --color-white: #ffffff;
 }
 
 /* Color background */
@@ -425,7 +425,7 @@ html {
 
 /* les elements de base */
 body {
-  background-color: rgba(206, 230, 231, 0.534);
+  background-color: var(--color-palette-second-var);
 }
 
 main {
@@ -433,7 +433,7 @@ main {
 }
 
 .trace {
-  background-color: rgba(140, 171, 172, 0.534);
+  background-color: var(--color-palette-first);
   padding: 20px;
   margin-top: 0;
   color: rgb(26, 47, 71);
@@ -442,7 +442,7 @@ main {
 }
 
 .main-footer {
-  background-color: rgba(73, 113, 114, 0.534);
+  background-color: var(--color-primary);
   width: 100%;
   display: flex;
 }
@@ -463,7 +463,7 @@ h6 {
 h2,
 h3,
 h4 {
-  color: rgb(118, 165, 130);
+  color: var(--color-primary-variation);
   padding: 20px;
 }
 
@@ -545,7 +545,7 @@ a:hover, a:active {
   color: rgb(16, 75, 16);
 }
 .menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
-  color: rgb(255, 255, 255);
+  color: var(--color-primary-variation);
 }
 .menu__aside a:focus {
   outline: thin dotted;
@@ -715,7 +715,7 @@ dd {
 
 /* Les composants */
 .menu__principal {
-  background-color: rgba(206, 230, 231, 0.534);
+  background-color: var(--color-palette-second-var);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -728,7 +728,7 @@ dd {
 }
 .menu__principal .menu-item {
   padding: 10px;
-  background-color: rgba(140, 171, 172, 0.534);
+  background-color: var(--color-palette-first);
   margin: 10px;
   border-radius: 5px;
 }
@@ -739,7 +739,7 @@ dd {
   font-family: "Verdana, Geneva", Tahoma, sans-serif;
 }
 .menu__principal .menu-item:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-primary-variation);
 }
 .menu__principal a:hover {
   color: black;
@@ -804,9 +804,9 @@ dd {
 }
 .menu__aside .menu-item {
   padding: 10px;
-  background-color: rgba(140, 171, 172, 0.534);
+  background-color: var(--color-palette-first);
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 4px;
 }
 .menu__aside .menu-item a {
   text-decoration: none;
@@ -815,10 +815,10 @@ dd {
   font-family: "Verdana, Geneva", Tahoma, sans-serif;
 }
 .menu__aside .menu-item:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-primary-variation);
 }
 .menu__aside a:hover {
-  color: black;
+  color: var(--color-white);
 }
 @media screen and (max-width: 700px) {
   .menu__aside .menu {

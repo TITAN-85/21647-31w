@@ -8,20 +8,6 @@ $color__background--h2h3h4: rgb(118, 165, 130);
 $color__background--code: rgb(172, 101, 101);
 */
 
-:root {
-    --color-primary: #17a477;
-    --color-primary-variation:  #17a477;
-    --color-primary-second-variation: #c2e982;
-    --color-secondary: #f8efd4;
-    --color-secondary-variation:#12455a;
-    --color-palette-first: #ffffff;
-    --color-palette-second:  #121b08;
-    --color-palette-second-var:#F1EFE5;
-    --color-palette-third: #ADB5C5;
-    --color-dark: #201D1F;
-    --color-white: #ffffff;
-  }
-  
   :root {
     /* --color-primary:  #661502;
     --color-primary-variation:  #fffbf4;
@@ -78,18 +64,28 @@ $color__background--code: rgb(172, 101, 101);
     --color-white: #ffffff; */
   }
   
+:root {
+  --color-primary: #17a477;
+  --color-primary-variation:  #17a477;
+  --color-primary-second-variation: #c2e982;
+  --color-secondary: #f8efd4;
+  --color-secondary-variation:#12455a;
+  --color-palette-first: #ffffff;
+  --color-palette-second:  #243511;
+  --color-palette-second-var:#F1EFE5;
+  --color-palette-third: #ADB5C5;
+  --color-dark: #201D1F;
+  --color-white: #ffffff;
+}
 
-
-
-
-$color__background-body : rgba(206, 230, 231, 0.534);
-$color__background-body-menu: rgba(140, 171, 172, 0.534);
-$color__background-body-footer: rgba(73, 113, 114, 0.534);
+$color__background-body: var(--color-palette-second-var);
+$color__background-body-menu: var(--color-palette-first);
+$color__background-body-footer: var(--color-primary);
 /* Color background */
-$color__background--h1: rgb(87, 50, 50);
-$color__background--h2h3h4: rgb(118, 165, 130);
-$color__background--h5h6: rgb(39, 87, 51);
-$color__background--code: rgb(172, 101, 101);
+$color__background--h1: var(--color-primary);
+$color__background--h2h3h4: var(--color-primary-variation);
+$color__background--h5h6: var(--color-palette-second);
+$color__background--code: var(--color-palette-second);
 
 /* Color H */
 $color__h1: rgb(26, 47, 71);
@@ -105,7 +101,8 @@ $color__link-hover: rgb(161, 35, 155);
 /* Color Links aside*/
 $color__link__aside: rgb(92, 26, 26);
 $color__link__aside-visited: rgb(16, 75, 16);
-$color__link__aside-hover: rgb(255, 255, 255);
+$color__link__aside-hover: var(--color-primary-variation);
+$color__link__aside-text-hover: var(--color-white);
 
 /* Color Buttons*/
 $color__border-button: red ;

@@ -58,7 +58,7 @@
         padding: 10px;
         background-color: $color__background-body-menu;
         margin: 5px;
-        border-radius: 20px;
+        border-radius: 4px;
 
         a {
             text-decoration: none;
@@ -72,10 +72,11 @@
 
     .menu-item:hover {
         background-color: $color__link__aside-hover;
+        
     }
 
     a:hover {
-        color: black;
+        color: $color__link__aside-text-hover;
     }
 
     @media screen and (max-width : 700px){

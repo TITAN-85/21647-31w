@@ -3,7 +3,8 @@
 h1{
     font-family: $font__code;
     padding: 20px;
-    font-size: clamp(.9rem, 2vw, 2.5rem);
+    margin: 0;
+    font-size: clamp(.2rem, 1vw, 2.5rem);
 }
 
 

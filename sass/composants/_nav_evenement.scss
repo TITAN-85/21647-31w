@@ -46,32 +46,54 @@
 }
 
 
-// .menu__item__description {
-//     background-color: rgb(35, 172, 76);
-// }
+.menu__item__description {
+    background-color: rgb(35, 172, 76);
+}
 
 .menu__item__icone {
     width: 50px;
     height: 50px;
-    border: 1px solid #aaa;
-    padding: 20px;
+    // border: 1px solid #aaa;
+    // padding: 20px;
 }
 
 .evenement__porte .menu__item__icone {
-    background-color: rgb(82, 5, 5);
-    background-image: 'https://s2.svgbox.net/loaders.svg?ic=bars';
+    // background-color: rgb(82, 5, 5);
+    background-image: url(https://s2.svgbox.net/crypto.svg?ic=amb&color=4797ff);
+    width: 32;
+    height: 32;
 }
 .evenement__projet .menu__item__icone {
-    background-color: rgb(12, 10, 131);
+    // background-color: rgb(12, 10, 131);
+    background-image: url(https://s2.svgbox.net/crypto.svg?ic=ada);
+    width: 32;
+    height: 32;
+    // <img src="https://s2.svgbox.net/crypto.svg?ic=auto&color=4797ff" width="32" height="32">
 }
 .evenement__stage .menu__item__icone {
-    background-color: rgb(97, 58, 0);
+    // background-color: rgb(97, 58, 0);
+    background-image: url(https://s2.svgbox.net/crypto.svg?ic=actn&color=4797ff)  ;
+    width: 32;
+    height: 32;
 }
 
-.evenement__porte .menu__item__icone:hover,
-.evenement__projet .menu__item__icone:hover,
-.evenement__stage .menu__item__icone:hover {
-    background-color: rgb(255, 0, 0);
-    border-radius: 30px;
-    background-image: 'https://s2.svgbox.net/crypto.svg?ic=atom';
+.evenement__porte .menu__item__icone:hover {
+    background-image: url(https://s2.svgbox.net/loaders.svg?ic=ball-triangle&color=4797ff);
+    width: 32;
+    height: 32;
 }
+
+.evenement__projet .menu__item__icone:hover {
+    background-image: url(https://s2.svgbox.net/loaders.svg?ic=circles&color=4797ff);
+    width: 32;
+    height: 32;
+}
+
+.evenement__stage .menu__item__icone:hover {
+    // background-color: rgb(255, 0, 0);
+    background-image: url(https://s2.svgbox.net/loaders.svg?ic=audio&color=4797ff);
+    width: 32;
+    height: 32;
+}
+// https://s2.svgbox.net/loaders.svg?ic=ball-triangle&color=4797ff
+// https://s2.svgbox.net/loaders.svg?ic=circles&color=4797ff

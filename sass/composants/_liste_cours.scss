@@ -1,11 +1,15 @@
 .liste {
-  margin: 20px;
+    margin: 20px;
     background-color: rgb(255, 0, 0);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
+}
   
-  .liste__cours {
-    flex: 0 1 20%;
-  }
+.liste__cours {
+    flex: 0 1 10%;
+}
+
+.custom-logo {
+  padding: 20px;
+}

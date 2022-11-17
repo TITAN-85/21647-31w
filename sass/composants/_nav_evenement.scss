@@ -59,6 +59,7 @@
 
 .evenement__porte .menu__item__icone {
     background-color: rgb(82, 5, 5);
+    background-image: 'https://s2.svgbox.net/loaders.svg?ic=bars';
 }
 .evenement__projet .menu__item__icone {
     background-color: rgb(12, 10, 131);
@@ -72,4 +73,5 @@
 .evenement__stage .menu__item__icone:hover {
     background-color: rgb(255, 0, 0);
     border-radius: 30px;
+    background-image: 'https://s2.svgbox.net/crypto.svg?ic=atom';
 }

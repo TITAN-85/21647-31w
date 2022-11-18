@@ -436,7 +436,7 @@ main {
   background-color: var(--color-palette-first);
   padding: 20px;
   margin-top: 0;
-  color: rgb(26, 47, 71);
+  color: var(--color-primary-second-variation);
   text-transform: uppercase;
   font-family: "Verdana, Geneva", Tahoma, sans-serif;
 }
@@ -957,13 +957,19 @@ dd {
 
 .liste {
   margin: 20px;
-  background-color: rgb(255, 0, 0);
+  background-color: var(--color-palette-first);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .liste__cours {
+  padding: 20px;
+  margin: 20px;
+  gap: 20px;
+  width: 200px;
+  height: 400px;
+  flex-wrap: wrap;
   flex: 0 1 10%;
 }
 

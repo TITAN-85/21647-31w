@@ -25,8 +25,9 @@
         "container" => "nav",
         "container_class" => "menu__evenement"
     ));
-
-
+    ?>
+    <section class="liste">
+        <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); ?>
@@ -34,10 +35,10 @@
                     <h1><a href="<?php the_permalink(); ?>">
                     <?php the_title(); ?></a></h1>
                             
-                    <p> Duree du cour <?php the_field('duree'); ?> </p>
-                    <h2>Couriel:<?php the_field('couriel'); ?></h2>
-                    <h2>Date de debue:<?php the_field('date'); ?></h2>
-                    <h2>Place pour trouve:<?php the_field('carte'); ?></h2>
+                     <p> Duree du cour<?php  the_field('duree'); ?> </p>
+                    <!--<h2>Couriel:<?php // the_field('couriel'); ?></h2>
+                    <h2>Date de debue:<?php //the_field('date'); ?></h2>
+                    <h2>Place pour trouve:<?php //the_field('carte'); ?></h2> -->
 
                     <?php // the_content(null, true); ?>
                     <?php if ( has_post_thumbnail() ) {
@@ -46,7 +47,7 @@
 
                     <?php
                     // var_dump(get_the_category());
-                    echo "<pre>" . print_r(get_the_category(), true) . "</pre>";
+                    // echo "<pre>" . print_r(get_the_category(), true) . "</pre>";
 
                     $montableau = get_the_category();
                     $boolGalerie = false;
@@ -60,13 +61,14 @@
                     if ($boolGalerie == true) {
                         the_content();
                     } else {
-                        echo wp_trim_words(get_the_excerpt(), 10, "...");
+                        echo wp_trim_words(get_the_excerpt(), 20, "...");
                     }
                     
                     ?>
                     </article>
             <?php endwhile; ?>
         <?php endif; ?>
+    </section>
 </main>
 
 <?php

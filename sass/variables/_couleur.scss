@@ -88,7 +88,7 @@ $color__background--h5h6: var(--color-palette-second);
 $color__background--code: var(--color-palette-second);
 
 /* Color H */
-$color__h1: rgb(26, 47, 71);
+$color__h1: var(--color-primary-second-variation);
 $color__h2h3h4: rgb(76, 163, 98);
 $color__h5h6: rgb(39, 80, 87);
 $color__code: rgb(141, 172, 101);

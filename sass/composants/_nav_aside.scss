@@ -28,6 +28,7 @@
     transition: transform 0.5s;
     font-size: 2rem;
     color: #fff;
+    
 }
 
 
@@ -40,7 +41,8 @@
     transition: transform 0.5s;
     background-color: rgba(56, 97, 145, 0.192);
     border-radius: 10px;
-    @media screen and (min-width: 700px) {
+    
+    @media screen and (min-width: 900px) {
       position: static;
       transform: translateX(0);
     }
@@ -59,6 +61,9 @@
         background-color: $color__background-body-menu;
         margin: 5px;
         border-radius: 4px;
+
+        border-radius: 0px 30px 10px 10px;
+        border-bottom: solid  5px var(--color-primary);
 
         a {
             text-decoration: none;
@@ -79,7 +84,7 @@
         color: $color__link__aside-text-hover;
     }
 
-    @media screen and (max-width : 700px){
+    @media screen and (max-width : 930px){
 
         .menu {
             display: none;

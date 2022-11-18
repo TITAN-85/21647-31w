@@ -788,7 +788,7 @@ dd {
   background-color: rgba(56, 97, 145, 0.192);
   border-radius: 10px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .menu__aside {
     position: static;
     transform: translateX(0);
@@ -807,6 +807,8 @@ dd {
   background-color: var(--color-palette-first);
   margin: 5px;
   border-radius: 4px;
+  border-radius: 0px 30px 10px 10px;
+  border-bottom: solid 5px var(--color-primary);
 }
 .menu__aside .menu-item a {
   text-decoration: none;
@@ -820,7 +822,7 @@ dd {
 .menu__aside a:hover {
   color: var(--color-white);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 930px) {
   .menu__aside .menu {
     display: none;
   }
@@ -957,7 +959,6 @@ dd {
 
 .liste {
   margin: 20px;
-  background-color: var(--color-palette-first);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -966,17 +967,32 @@ dd {
 .liste__cours {
   padding: 20px;
   margin: 20px;
-  gap: 20px;
-  width: 200px;
-  height: 400px;
+  width: 300px;
+  height: 350px;
+  background-color: var(--color-palette-first);
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  flex: 0 1 10%;
+  border-radius: 0px 120px 20px 20px;
+  border-bottom: solid 5px var(--color-primary);
 }
 
 .custom-logo {
   padding: 20px;
 }
 
+@media screen and (max-width: 900px) {
+  .liste {
+    display: flex;
+    flex-direction: column;
+  }
+  .liste__cours {
+    width: 400px;
+  }
+  h1 {
+    font-size: clamp(1.3rem, 1vw, 2.5rem);
+  }
+}
 /* Layout */
 /*  Just 1 layout que dois etre alume  */
 .site__header {

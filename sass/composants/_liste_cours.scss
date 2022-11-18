@@ -1,7 +1,5 @@
 .liste {
   margin: 20px;
-  background-color: var(--color-palette-first);
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -10,13 +8,32 @@
 .liste__cours {
   padding: 20px;
   margin: 20px;
-  gap: 20px;
-  width: 200px;
-  height: 400px;
+  width: 300px;
+  height: 350px;
+  background-color: var(--color-palette-first);
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  flex: 0 1 10%;
+  border-radius: 0px 120px 20px 20px;
+  border-bottom: solid  5px var(--color-primary);
+  // flex: 0 1 10%;
 }
 
 .custom-logo {
   padding: 20px;
 }
+
+@media screen and (max-width : 900px){
+  .liste {
+      display: flex;
+      flex-direction: column;
+    }
+  .liste__cours {
+    width: 400px;
+
+  }
+  h1 {
+    font-size: clamp(1.3rem, 1vw, 2.5rem);
+  }
+}
+

@@ -1,4 +1,5 @@
 .liste {
+  display: flex;
     margin: 20px;
     background-color: rgb(255, 0, 0);
     display: flex;
@@ -7,6 +8,7 @@
 }
   
 .liste__cours {
+  flex-wrap: wrap;
     flex: 0 1 10%;
 }
 

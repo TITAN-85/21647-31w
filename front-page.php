@@ -43,7 +43,27 @@
                     <?php if ( has_post_thumbnail() ) {
 	                            the_post_thumbnail('thumbnail'); } ?>
 
-                    <?= wp_trim_words(get_the_excerpt(), 10, "..."); ?>
+
+                    <?php
+                    // var_dump(get_the_category());
+                    echo "<pre>" . print_r(get_the_category(), true) . "</pre>";
+
+                    $montableau = get_the_category();
+                    $boolGalerie = false;
+
+                    foreach ($montableau as $cle) {
+                        if ($cle->slug == "galerie") {
+                            $boolGalerie = true;
+                        }
+                    }
+
+                    if ($boolGalerie == true) {
+                        the_content();
+                    } else {
+                        echo wp_trim_words(get_the_excerpt(), 10, "...");
+                    }
+                    
+                    ?>
                     </article>
             <?php endwhile; ?>
         <?php endif; ?>

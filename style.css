@@ -737,6 +737,18 @@ dd {
 .menu__principal a:hover {
   color: black;
 }
+@media screen and (max-width: 900px) {
+  .menu__principal .menu {
+    margin: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__principal .menu li {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 /* transformation en CSS */
 .site__menu {

@@ -71,3 +71,12 @@
 .evenement__stage .menu__item__icone:hover {
     background-image: url(https://s2.svgbox.net/loaders.svg?ic=audio&color=4797ff);
 }
+
+@media screen and (max-width: 900px) {
+    .menu__evenement .menu {
+        flex-direction: column;
+        margin: 20px;
+        justify-content: center;
+        gap: 20px;
+    }
+}

@@ -5,8 +5,17 @@
 }
 
 .sidebar-icones, .sidebar-recherche {
-    // margin-left: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar-icones, .sidebar-recherche {
+        justify-content: flex-start;
+        margin-left: 200px;
+    }
+    .sidebar {
+        width: 400px;
+    }
 }

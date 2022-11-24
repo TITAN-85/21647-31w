@@ -8,6 +8,10 @@ Creation de deux sidebars permettront d’intégrer les widget
 « Recherche »    et 
 « icônes sociales »
 
+Ajouter des links pour chaque des icones
+Ajoute de fonctionement pour la bar de recherche
+Ajoute de css.
+
 
 
 

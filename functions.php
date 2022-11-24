@@ -215,9 +215,10 @@ function my_register_sidebars()
 			'after_title'   => '</h3>',
 		)
 	);
-	/* Repeat register_sidebar() code for additional sidebars. */
 
-
+	/**
+	 * La bar de recherche a droite/haut de la. dans header
+	 */
 	register_sidebar(
 		array(
 			'id'            => 'recherche',
@@ -230,6 +231,9 @@ function my_register_sidebars()
 		)
 	);
 	
+	/**
+	 * Les icones de sidebar en bas de la bar recherche
+	 */
 	register_sidebar(
 		array(
 			'id'            => 'icones',

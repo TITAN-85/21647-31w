@@ -74,7 +74,8 @@
 			<div><?php get_sidebar('aside-1'); ?></div>
 			<div><?php get_sidebar('aside-2'); ?></div>
 		</aside>
-
+		
+		<!-- Affichage du bar de recherche et des icones en sous -->
 		<aside class="site__recherche">
 			<div><?php get_sidebar('recherche'); ?></div>
 			<div><?php get_sidebar('icones'); ?></div>

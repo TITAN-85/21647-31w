@@ -18,4 +18,13 @@
     .sidebar {
         width: 400px;
     }
+
+}
+
+@media screen and (max-width: 601px) {
+
+    .sidebar img{
+        width: 200px;
+        object-fit: contain;
+    }
 }

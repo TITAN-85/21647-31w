@@ -20,51 +20,32 @@
 <main class="site__main">
     <?php
 
-    wp_nav_menu(array(
-        "menu" => "evenement",
-        "container" => "nav",
-        "container_class" => "menu__evenement"
-    ));
     ?>
     <section class="liste">
-        <?php
+    <?php
+        echo "Resultat de recherche   -  ",  the_search_query(); 
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); ?>
-                <article class="liste__cours">
+                <!-- <article class="liste__cours"> -->
                     <h1><a href="<?php the_permalink(); ?>">
                     <?php the_title(); ?></a></h1>
-                            
-                     <p> Duree du cour<?php  the_field('duree'); ?> </p>
 
-                    <?php if ( has_post_thumbnail() ) {
-	                            the_post_thumbnail('thumbnail'); } ?>
-                    <?php
+                    <?php global $wp_query;
+                        $total_results = $wp_query->found_posts;
 
-                    $montableau = get_the_category();
-                    $boolGalerie = false;
-
-                    foreach ($montableau as $cle) {
-                        if ($cle->slug == "galerie") {
-                            $boolGalerie = true;
-                        }
-                    }
-
-                    if ($boolGalerie == true) {
-                        the_content();
-                    } else {
-                        echo wp_trim_words(get_the_excerpt(), 20, "&#9755;");
-                    }
-                    
+                        echo wp_trim_words(get_the_excerpt(), 30, "  -  &#9755;");
+                    // }
+                    echo "<br>";
+                    echo "-------------------------------------------------------------------------";
                     ?>
-                    </article>
+                <!-- </article> -->
             <?php endwhile; ?>
         <?php endif; ?>
+        <h4> Nombre de resultat <?php echo $total_results?> </h4>
     </section>
 </main>
 
 <?php
 get_footer();
 ?>
-
-<!-- </html> -->

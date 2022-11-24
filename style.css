@@ -978,6 +978,12 @@ dd {
     width: 400px;
   }
 }
+@media screen and (max-width: 601px) {
+  .sidebar img {
+    width: 200px;
+    object-fit: contain;
+  }
+}
 .liste {
   margin: 20px;
   display: flex;
@@ -1006,6 +1012,7 @@ dd {
   .liste {
     display: flex;
     flex-direction: column;
+    width: 400px;
   }
   .liste__cours {
     width: 400px;

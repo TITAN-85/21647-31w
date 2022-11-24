@@ -2,6 +2,19 @@ Etudiant: Alexandru Candu - N:e2295298
 
 Theme 21647-31w de AC
 
+EPREUVE FINALE
+
+Creation de deux sidebars permettront d’intégrer les widget 
+« Recherche »    et 
+« icônes sociales »
+
+
+
+
+
+
+<!-- Theme 21647-31w de AC
+
 Description: Dans le TP2 j'ai des:
 a) widget
 b) Des articles
@@ -16,5 +29,5 @@ e) Des champe personalise.
     3. cours
     4. Date
     5. evenement
-    6. Titre
+    6. Titre -->
 

@@ -218,6 +218,8 @@ function my_register_sidebars()
 	/* Repeat register_sidebar() code for additional sidebars. */
 
 
+	
+
 	/**
 	 *
 	 *	La fonction permettra de modifier la requête principale de wordpress « main query »

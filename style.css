@@ -922,6 +922,10 @@ dd {
   display: inline-block;
 }
 
+.sidebar-icones, .sidebar-recherche {
+  margin-left: auto;
+}
+
 .site__footer {
   display: flex;
   justify-content: space-around;
@@ -953,6 +957,12 @@ dd {
 
 .sidebar {
   margin: 20px;
+}
+
+.sidebar-icones, .sidebar-recherche {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .liste {

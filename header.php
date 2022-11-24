@@ -74,3 +74,9 @@
 			<div><?php get_sidebar('aside-1'); ?></div>
 			<div><?php get_sidebar('aside-2'); ?></div>
 		</aside>
+
+		<aside class="site__header">
+			<div><?php get_sidebar('recherche'); ?></div>
+			<div><?php get_sidebar('icones'); ?></div>
+		</aside>
+		

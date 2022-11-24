@@ -218,7 +218,31 @@ function my_register_sidebars()
 	/* Repeat register_sidebar() code for additional sidebars. */
 
 
+	register_sidebar(
+		array(
+			'id'            => 'recherche',
+			'name'          => __('Sidebar - recherche'),
+			'description'   => __('Deuxieme sidebar du recherche'),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 	
+	register_sidebar(
+		array(
+			'id'            => 'icones',
+			'name'          => __('Sidebar - icones'),
+			'description'   => __('Deuxieme sidebar du icones'),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+
 
 	/**
 	 *

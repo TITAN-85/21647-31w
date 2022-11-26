@@ -466,7 +466,9 @@ h4 {
 p {
   color: rgb(67, 119, 95);
   margin-bottom: 0.5em;
-  padding: 10px;
+  display: inline-block;
+  margin: 20px;
+  padding: 0;
 }
 
 dfn,
@@ -519,6 +521,7 @@ big {
 
 a {
   color: rgb(161, 35, 35);
+  display: inline-block;
 }
 a:visited {
   color: rgb(35, 161, 35);
@@ -610,7 +613,9 @@ hr {
 p {
   color: rgb(67, 119, 95);
   margin-bottom: 0.5em;
-  padding: 10px;
+  display: inline-block;
+  margin: 20px;
+  padding: 0;
 }
 
 dfn,
@@ -749,6 +754,10 @@ dd {
   .menu__principal .menu li {
     display: flex;
   }
+}
+
+.menu__principal .menu {
+  margin: 0;
 }
 
 /* transformation en CSS */
@@ -930,6 +939,17 @@ dd {
   display: inline-block;
 }
 
+.headerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+  .headerFlex {
+    justify-content: center;
+  }
+}
 .site__footer {
   display: flex;
   justify-content: space-around;
@@ -959,6 +979,13 @@ dd {
   padding: 5px;
 }
 
+@media screen and (max-width: 900px) {
+  .site__footer {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+}
 .sidebar {
   margin: 20px;
 }
@@ -1056,7 +1083,7 @@ dd {
   grid-template-columns: auto;
   grid-template-areas: "menu" "header" "main" "sidebar" "footer";
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .site {
     grid-template-columns: 25% auto;
     grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";

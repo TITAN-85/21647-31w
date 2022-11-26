@@ -21,8 +21,8 @@
 
 	<?php wp_head(); ?>
 	<style>
-		.site__header { 
-			background-color:<?= get_theme_mod("site__title__background"); ?>;
+		.site__header {
+			background-color: <?= get_theme_mod("site__title__background"); ?>;
 		}
 	</style>
 </head>
@@ -33,28 +33,46 @@
 
 		<header id="masthead" class="site__header">
 
-			<div class="site-branding">
-				
-				<?= get_custom_logo(); ?>
-
-				<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-
-				<?php
-				$underscores_description = get_bloginfo('description', 'display');
-				if ($underscores_description || is_customize_preview()) :
-				?>
-					<p class="site-description"><?php echo $underscores_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-												?></p>
-				<?php endif; ?>
-			</div><!-- .site-branding -->
-
-<?php /* Affichage du menu principal */
-				wp_nav_menu(array(
+			<?php /* Affichage du menu principal */
+			wp_nav_menu(array(
 				"menu" => "principal",
 				"container" => "nav",
-				"container_class" => "menu__principal")); ?>
+				"container_class" => "menu__principal"
+			)); ?>
+
+			<div class="site-branding">
+				<div class="headerFlex">
+					<div class="headerLeft">
+						<!-- LOGO -->
+						<?= get_custom_logo(); ?>
+
+						<!-- TITLE Alexandru Candu -->
+						<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+
+						<?php $underscores_description = get_bloginfo('description', 'display');
+						if ($underscores_description || is_customize_preview()) :
+						?>
+							<!-- Site description "TP1-Alexandru Candu" -->
+							<p class="site-description"><?php echo $underscores_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+														?></p>
+						<?php endif; ?>
+
+					</div>
+					<div class="headerRight">
+
+						<!-- Affichage du bar de recherche et des icones en de sous -->
+						<div>
+							<?php get_sidebar('recherche');
+							get_sidebar('icones'); ?>
+						</div>
+					</div>
+				</div>
+			</div><!-- .site-branding -->
+
+
 
 		</header><!-- #masthead -->
+
 		<aside class="site__menu">
 			<h2 class="menu-icone">Montrer le menu</h2>
 			<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
@@ -67,17 +85,8 @@
 			));
 
 			?>
-
+			<aside class="site__sidebar">
+				<div><?php get_sidebar('aside-1'); ?></div>
+				<div><?php get_sidebar('aside-2'); ?></div>
+			</aside>
 		</aside>
-
-		<aside class="site__sidebar">
-			<div><?php get_sidebar('aside-1'); ?></div>
-			<div><?php get_sidebar('aside-2'); ?></div>
-		</aside>
-		
-		<!-- Affichage du bar de recherche et des icones en sous -->
-		<aside class="site__header">
-			<div><?php get_sidebar('recherche'); ?></div>
-			<div><?php get_sidebar('icones'); ?></div>
-		</aside>
-		

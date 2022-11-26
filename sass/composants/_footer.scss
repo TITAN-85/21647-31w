@@ -30,7 +30,9 @@
 
 @media screen and (max-width: 900px) {
 
-    // .site__footer {
-    //     flex-direction: column;
-    // }
+    .site__footer {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
 }

@@ -1,5 +1,6 @@
 a {
 	color: $color__link;
+	display: inline-block;
 
 	&:visited {
 		color: $color__link-visited;
